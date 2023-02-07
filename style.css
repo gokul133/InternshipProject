@@ -33,13 +33,6 @@ html{
     display: block;
 }
 
-.container{
-    overflow: hidden;
-}
-
-.s{
-    overflow-y: scroll;
-}
 
 .navbar1 {
     font-size: 18px;
