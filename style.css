@@ -271,7 +271,7 @@ html{
     font-size: 3.1rem;
     font-weight: 400px;
     padding-top: 200px;
-    margin-left: 6rem !important;
+    margin-left: 6.5rem !important;
     margin-bottom: 0;
     text-transform: uppercase;
 }
@@ -344,7 +344,7 @@ html{
     border-color: black;
     border-radius: 1px;
     width: fit-content;
-    margin-left: 9rem;
+    margin-left: 9rem !important;
 }
 
 .box-1 .btn:hover{
