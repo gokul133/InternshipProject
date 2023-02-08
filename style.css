@@ -258,7 +258,6 @@ html{
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    margin-left: 1rem;
     background-image: url(gok13.jpg);
     background-size: cover;
     background-position: center center;
@@ -270,6 +269,7 @@ html{
 .box-1 h4{
     color: #212121;
     font-size: 3.1rem;
+    margin-left: 1rem;
     font-weight: 400px;
     padding-top: 200px;
     margin-left: 5.5rem;
