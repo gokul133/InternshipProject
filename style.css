@@ -271,7 +271,7 @@ html{
     font-size: 3.1rem;
     font-weight: 400px;
     padding-top: 200px;
-    margin-left: 6.5rem !important;
+    margin-left: 5.5rem;
     margin-bottom: 0;
     text-transform: uppercase;
 }
@@ -280,7 +280,6 @@ html{
     color: #212121;
     font-size: 1.3rem;
     width: 35%;
-    margin-left:2rem;
     font-family: 'Roboto', sans-serif;
     background-color: transparent;
     margin-bottom: 0;
@@ -344,7 +343,7 @@ html{
     border-color: black;
     border-radius: 1px;
     width: fit-content;
-    margin-left: 7rem !important;
+    margin-left: 9rem;
 }
 
 .box-1 .btn:hover{
@@ -464,7 +463,7 @@ html{
     }
 
     .box-1 .btn{
-        padding-left: 10vw;
+        margin-left: 4rem;
     }
     .box-3{
         width: auto;
