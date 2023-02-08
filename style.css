@@ -464,7 +464,7 @@ html{
     }
 
     .box-1 .btn{
-        margin-left: 100vw !important;
+        padding-left: 10vw;
     }
     .box-3{
         width: auto;
