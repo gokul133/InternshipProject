@@ -344,7 +344,7 @@ html{
     border-color: black;
     border-radius: 1px;
     width: fit-content;
-    margin-left: 10rem !important;
+    margin-left: 7rem !important;
 }
 
 .box-1 .btn:hover{
@@ -464,7 +464,7 @@ html{
     }
 
     .box-1 .btn{
-        margin-left: 4rem;
+        margin-left: 4rem !important;
     }
     .box-3{
         width: auto;
