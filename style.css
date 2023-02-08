@@ -10,11 +10,15 @@
     
 }
 
+
+
 body{
+    position: relative;
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100%;
+    /* overflow: hidden; */
     display: flex;
     align-items: center;
     min-height: 100vh;
@@ -28,11 +32,6 @@ body{
 html{
     scroll-behavior: smooth;
 }
-
-.active {
-    display: block;
-}
-
 
 .navbar1 {
     font-size: 18px;
@@ -71,10 +70,6 @@ html{
     cursor: pointer;
     color: white;
     font-size: 24px;
-}
-
-.active {
-    display: block;
 }
 
 
@@ -497,7 +492,7 @@ html{
     }
 
     .box-4{
-        width: auto;
+        width: auto !important;
     }
     .box-1{
         width: auto;
@@ -535,26 +530,31 @@ html{
 
     .box-4 .conten1 h4{
         position: relative;
-        color: black;
-        font-size: 40px;
-        font-weight: 400;
+        color: white;
+        font-size: 40px !important;
+        font-weight: 400 !important;
         margin-bottom: 0;
         text-transform: uppercase;
     }
 
     .box-4 .conten1 p{
         position: relative;
-        color: black;
-        font-size: 1.1rem;
+        color: white;
+        font-size: 1.1rem !important;
         width: 90%;
         background-color: transparent;
         margin-bottom: 0;
+        left: 5%;
         text-transform: uppercase;
-        font-weight: 400;
+        font-weight: 400 !important;
         line-height: 2rem;
         text-align: center;
         justify-content: center;
     }
+
+
+
+    
 }
 
 
@@ -572,12 +572,17 @@ html{
     }
     .box-1 h4{
         font-size: 2rem;
+        padding-left: 20%;
     }
     .box-1 p{
         width: auto;
         /* line-height: normal; */
         font-size: 1rem;
     }
+.box-1 .btn{
+    margin-left: 23%;
+}
+
     .step1{
         min-width: 0 !important;
     }
@@ -585,7 +590,7 @@ html{
         width: auto;
     }
     .box-4{
-        width: auto;
+        width: auto !important;
     }
     .box-2 p{
         font-size: 0.8rem;
@@ -593,8 +598,8 @@ html{
     .box-3 .conten h4{
         position: relative;
         color: white;
-        font-size: 25px;
-        font-weight: 300;
+        font-size: 25px !important;
+        font-weight: 300 !important;
         top: 5%;
         margin-bottom: 0;
         text-transform: uppercase;
@@ -603,12 +608,12 @@ html{
     .box-3 .conten p{
         position: relative;
         color: white;
-        font-size: 0.8rem;
+        font-size: 0.8rem !important;
         width: 90%;
         background-color: transparent;
         margin-bottom: 0;
         text-transform: uppercase;
-        font-weight: 400;
+        font-weight: 400 !important;
         line-height: 2rem;
         text-align: center;
         justify-content: center;
@@ -617,8 +622,8 @@ html{
     .box-4 .conten1 h4{
         position: relative;
         color: black;
-        font-size: 25px;
-        font-weight: 300;
+        font-size: 25px !important;
+        font-weight: 300 !important;
         margin-bottom: 0;
         text-transform: uppercase;
     }
@@ -626,12 +631,12 @@ html{
     .box-4 .conten1 p{
         position: relative;
         color: black;
-        font-size: 0.8rem;
+        font-size: 0.8rem !important;
         width: 90%;
         background-color: transparent;
         margin-bottom: 0;
         text-transform: uppercase;
-        font-weight: 400;
+        font-weight: 400 !important;
         line-height: 2rem;
         text-align: center;
         justify-content: center;
@@ -639,19 +644,84 @@ html{
 }
 
 .box-4{
+    position: relative;
     display: flex;
     width: 70vw;
-    flex-direction: row;
-    flex-direction: column;
     top: 4.5rem;
     height: 250px;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: black;
     border-radius: 20px;
-    overflow: hidden;
+    margin-bottom: 110px;
 }
 
+.box-4:after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #F3B43E;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+.box-4:before,
+.box-4:after
+{
+    background: linear-gradient(235deg, white, #060c21, #F3B43E);
+}
+
+
+.conten1{
+    padding: 7%;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.box-4 .conten1 h4{
+    position: relative;
+    color: white;
+    font-size: 50px;
+    top: -10px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.box-4 .conten1 p{
+    position: relative;
+    color: white;
+    font-size: 1.3rem;
+    width: 90%;
+    background-color: transparent;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* .box-4 h4{
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400px;
+}
+
+.box-4 p{
+    position: absolute;
+    align-items: center;
+    left: 20%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 50%;
+} 
 /* .box-4:after{
     content: '';
     position: absolute;
@@ -755,7 +825,7 @@ html{
     align-items: center;
 }
 
-.conten1 h4{
+/* .conten1 h4{
     position: relative;
     color: black;
 }
@@ -764,7 +834,7 @@ html{
     position: relative;
     color: black;
 
-}
+} */
 
 .imag {
     overflow: hidden;
